@@ -1,87 +1,83 @@
 public class App {
-    public static void main(String[] args) {
+	 public static void main(String[] args) {
 
-        // Character Class
-        Character knight = new Character();
+	        // Character Class
+	        Character knight = new Character();
 
-        knight.strength = 10;
-        knight.agility = 5;
-        knight.intelligence = 0;
-        knight.name = "Chen";
-        knight.sayMyName();
+	        knight.strength = 10;
+	        knight.agility = 5;
+	        knight.intelligence = 0;
+	        knight.name = "Chen";
+	        knight.sayMyName();
 
-        Character mage = new Character();
+	        Character mage = new Character();
 
-        mage.strength = 0;
-        mage.agility = 5;
-        mage.intelligence = 10;
-        mage.name = "Akasha";
-        mage.sayMyName();
+	        mage.strength = 0;
+	        mage.agility = 5;
+	        mage.intelligence = 10;
+	        mage.name = "Akasha";
+	        mage.sayMyName();
 
-        Character thief = new Character();
+	        Character thief = new Character();
 
-        thief.strength = 5;
-        thief.agility = 10;
-        thief.intelligence = 0;
-        thief.name = "Gondar";
-        thief.sayMyName();
+	        thief.strength = 5;
+	        thief.agility = 10;
+	        thief.intelligence = 0;
+	        thief.name = "Gondar";
+	        thief.sayMyName();
 
-        // Enemy Class
-        Enemy boss = new Enemy();
+	        // Enemy Class
+	        Enemy boss = new Enemy();
 
-        boss.damage = 50;
-        boss.health = 500;
-        boss.armor = 100;
-        boss.hasMagicImmunity = true;
-        boss.name = "Roshan";
-        boss.enemyDialogue();
+	        boss.damage = 50;
+	        boss.health = 500;
+	        boss.armor = 100;
+	        boss.hasMagicImmunity = true;
+	        boss.name = "Roshan";
+	        boss.enemyDialogue();
 
-        Enemy skeleton = new Enemy();
+	        Enemy skeleton = new Enemy();
 
-        skeleton.damage = 5;
-        skeleton.health = 10;
-        skeleton.armor = 5;
-        skeleton.hasMagicImmunity = false;
-        skeleton.name = "Common Skeleton Warrior";
-        skeleton.enemyDialogue();
+	        skeleton.damage = 5;
+	        skeleton.health = 10;
+	        skeleton.armor = 5;
+	        skeleton.hasMagicImmunity = false;
+	        skeleton.name = "Common Skeleton Warrior";
+	        skeleton.enemyDialogue();
 
-        Enemy dragon = new Enemy();
+	        Enemy dragon = new Enemy();
 
-        dragon.damage = 40;
-        dragon.health = 400;
-        dragon.armor = 75;
-        dragon.hasMagicImmunity = false;
-        dragon.name = "Ancient Wyvern";
-        dragon.enemyDialogue();
-
-        // Exercise 1
-        // 1. Create a "Weapon" class.
-
-        // The Weapon class will have the following attributes.
-
-        // Name
-        // Damage
-        // Weight
-        // Rarity
-        // Description
-
-        // 2. Create a method named "weaponDescription" that will display the weapon
-        // description.
-
-        // 3. Create three (3) objects from the "Weapon" class and give them attributes
-
-        // Examples
-
-        // Object - Hammer
-        // Object Name - "Mjollnir"
-        // Weight - 4.5
-        // Rarity - "Legendary"
-        // Description - "A might hammer owned by the god of lightning thor!"
-
-        // Object - Short Sword
-        // Object Name - "Common Sword"
-        // Weight - 2
-        // Rarity - "Common"
-        // Description - "A cheap sword used mostly by common enemies"
-    }
+	        dragon.damage = 40;
+	        dragon.health = 400;
+	        dragon.armor = 75;
+	        dragon.hasMagicImmunity = false;
+	        dragon.name = "Ancient Wyvern";
+	        dragon.enemyDialogue();
+	        
+	        //Exercise 1
+	        
+	       Weapon Primary = new Weapon();
+	       Primary.Name = "Vandal";
+	       Primary.Damage = 40;
+	       Primary.Weight = 25;
+	       Primary.Rarity = "A+";
+	       Primary.Description = " The Vandal is a Rifle that is a primary weapon in VALORANT.";
+	       Primary.WeaponDescription();
+		 
+	       Weapon Ultimate = new Weapon();
+	       Ultimate.Name = "Tour De Force";
+	       Ultimate.Damage = 150;
+	       Ultimate.Weight = 18;
+	       Ultimate.Rarity = "S+";
+	       Ultimate.Description = " Tour De Force is an ultimate ability for Chamber.";
+	       Ultimate.WeaponDescription();
+		 
+	       Weapon Secondary = new Weapon();
+	       Secondary.Name = "Sheriff";
+	       Secondary.Damage = 55;
+	       Secondary.Weight = 20;
+	       Secondary.Rarity = "B+";
+	       Secondary.Description = " The Sheriff is a Sidearm in VALORANT.";
+	       Secondary.WeaponDescription();
+	 }
 }
