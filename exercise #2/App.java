@@ -6,20 +6,20 @@ class Main {
         // Creates a new Linkedlist Object
         LinkedList<String> Favlist = new LinkedList<>();
 
-        // Adds new songs to Playlist
+        // Add 5 new songs to your Playlist using the add() method
         Favlist.add("Let me go");
         Favlist.add("Scarred");
         Favlist.add("Lost me");
         Favlist.add("For tonight");
         Favlist.add("Like i want you");
 
-        // Adds a new song at the front of the Playlist
+        // Add a new song at the front of the Playlist using the addFirst() method
         Favlist.addFirst("Favorite mistake");
 
-        // Adds a new song at the end of the Playlist
-        Favlistt.addLast("The beach");
+        // Add a new song at the end of the Playlist using the addLast() method
+        Favlist.addLast("The beach");
 
-        // Display node at the front in the LinkedList
+       // Display the song at the front of the Playlist using the combination of get() method and the println() method
         System.out.println(Favlist.get(0));
 
         // Replace the last song using the set() method
@@ -28,7 +28,7 @@ class Main {
         // Remove the first song using the remove() method
         Favlist.remove(0);
 
-        // Display all songs in Playlist
+        // Display all songs in your Playlist using the println method
         System.out.println("Updated playlist: " + Favlist);
     }
 }
